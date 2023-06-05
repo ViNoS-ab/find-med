@@ -1,8 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
-import Search from "./searchBox";
+import Search from "./SearchBox";
 import Logo from "./Logo";
-import Link from "next/link";
 
 export default function NavBar({ isIntersecting, setIsIntersecting }) {
   const path = usePathname();

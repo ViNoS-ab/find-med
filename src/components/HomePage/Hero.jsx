@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import shield from "/public/amico.png";
-import Search from "../shared/searchBox";
+import Search from "../shared/SearchBox";
 
 function Hero({ isIntersecting, setIsIntersecting }) {
   return (
