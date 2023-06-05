@@ -1,0 +1,28 @@
+.animateContain {
+  animation-name: contain;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.3, -0.09, 1, 0.27);
+}
+
+.animateReverseContain {
+   @apply animate-bounce;
+    animation-duration: .6s;
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes contain {
+    0%{
+        translate: -50% 100%;
+        @apply bg-white shadow-md ring-offset-4 justify-self-start;
+    }
+    50% {
+        @apply shadow-none  justify-self-center;
+        translate: -50% 0;
+        
+    }
+    100% {
+        translate: 0;
+    }
+}

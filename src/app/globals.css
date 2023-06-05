@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    @apply text-main-blue
+}
+* {
+    @apply m-0 p-0
+}
