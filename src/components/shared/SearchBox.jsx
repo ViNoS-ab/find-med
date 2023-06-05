@@ -1,5 +1,5 @@
 "use client";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import style from "./searchBox.module.css";
 
 export default function SearchBox({ isIntersecting, setIsIntersecting }) {
