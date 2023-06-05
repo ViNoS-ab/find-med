@@ -5,7 +5,7 @@
 }
 
 .animateReverseContain {
-   @apply animate-bounce;
+   @apply animate-bounce ;
     animation-duration: .6s;
     animation-iteration-count: 3;
     animation-fill-mode: forwards;

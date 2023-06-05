@@ -1,6 +1,6 @@
 "use client";
 import Hero from "@/components/medicaments/Hero";
-import NavBar from "@/components/medicaments/NavBar";
+import NavBar from "@/components/shared/NavBar";
 import PopularSearch from "@/components/medicaments/popularSearch";
 import AllProducts from "@/components/medicaments/AllProducts";
 import { useState } from "react";

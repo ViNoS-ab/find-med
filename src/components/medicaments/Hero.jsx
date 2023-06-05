@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import pharmacyPic from "/public/bro.png";
-import Search from "./searchBox";
+import Search from "../shared/searchBox";
 
 function Hero({ isIntersecting, setIsIntersecting }) {
   return (

@@ -1,3 +1,4 @@
+"use client";
 import { useCallback, useEffect, useRef, useState } from "react";
 import style from "./searchBox.module.css";
 
@@ -31,16 +32,16 @@ export default function searchBox({ isIntersecting, setIsIntersecting }) {
   }, [isIntersecting]);
   return (
     <span
-      className={`relative  ${
-        isIntersecting && "ml-5 mt-14 "
-      } flex items-cente w-4/6 max-w-xl justify-center  rounded-lg p-3`}
+      className={`relative  flex items-cente  max-w-xl justify-center  rounded-lg p-3 ${
+        isIntersecting ? "ml-5 mt-14 w-3/4" : "w-fit"
+      } `}
       ref={searchRef}>
       <input
         type="text"
         className="w-3/4 p-3 pl-6 outline-main-blue rounded-l-lg bg-gray-200 placeholder:text-secondary-blue"
         placeholder="Search for Medicines"
       />
-      <button className="p-3 w-1/4 rounded-r-lg bg-main-blue text-white">
+      <button className="p-3 w-1/4 rounded-r-lg bg-secondary-blue text-white">
         Search
       </button>
     </span>
