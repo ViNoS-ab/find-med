@@ -2,7 +2,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import style from "./searchBox.module.css";
 
-export default function searchBox({ isIntersecting, setIsIntersecting }) {
+export default function SearchBox({ isIntersecting, setIsIntersecting }) {
   const searchRef = useRef(null);
 
   const cb = entries => {
